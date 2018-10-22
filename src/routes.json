@@ -1,0 +1,271 @@
+[
+    {
+        "title": "Accueil",
+        "route": "/",
+        "tpl": "HomePage"
+    },
+    {
+        "title": "Boulouparis",
+        "route": "/boulouparis",
+        "region": "Boulouparis",
+        "children": [
+            {
+                "title": "Îlot Petit Ténia",
+                "route": "/ilot-petit-tenia",
+                "ilot": "IlotPetitTenia"
+            },
+            {
+                "title": "Îlot Ténia",
+                "route": "/ilot-tenia",
+                "ilot": "IlotTenia"
+            }
+        ]
+    },
+    {
+        "title": "Bourail",
+        "route": "/bourail",
+        "region": "Bourail",
+        "children": [
+            {
+                "title": "Îlot Kouenra",
+                "route": "/ilot-kouenra",
+                "ilot": "IlotKouenra"
+            },
+            {
+                "title": "Île Verte",
+                "route": "/ile-verte",
+                "ilot": "IleVerte"
+            }
+        ]
+    },
+    {
+        "title": "A l'est de Nouméa",
+        "route": "/noumea-est",
+        "region": "EstNoumea",
+        "children": [
+            {
+                "title": "Îlot Bailly",
+                "route": "/ilot-bailly",
+                "ilot": "IlotBailly"
+            },
+            {
+                "title": "Îlot Charon",
+                "route": "/ilot-charon",
+                "ilot": "IlotCharon"
+            },
+            {
+                "title": "Îlot Porc-Epic",
+                "route": "/ilot-porc-epic",
+                "ilot": "IlotPorcEpic"
+            }
+        ]
+    },
+    {
+        "title": "Hienghene",
+        "route": "/hienghene",
+        "region": "Hienghene"
+    },
+    {
+        "title": "Koumac",
+        "route": "/koumac",
+        "region": "Koumac",
+        "children": [
+            {
+                "title": "Îlot Rat",
+                "route": "/ilot-rat",
+                "ilot": "IlotRat"
+            }
+        ]
+    },
+    {
+        "title": "La Foa",
+        "route": "/lafoa",
+        "region": "LaFoa",
+        "children": [
+            {
+                "title": "Île Isié",
+                "route": "/ile-isie",
+                "ilot": "IleIsie"
+            },
+            {
+                "title": "Îlot Konduyo",
+                "route": "/ilot-konduyo",
+                "ilot": "IlotKonduyo"
+            }
+        ]
+    },
+    {
+        "title": "Balade dans la mangrove",
+        "route": "/mangrove",
+        "region": "Mangrove",
+        "children": [
+            {
+                "title": "Descente de la Tamoa",
+                "route": "/tamoa",
+                "ilot": "Tamoa"
+            },
+            {
+                "title": "Quai Ballande",
+                "route": "/quai-ballande",
+                "ilot": "QuaiBallande"
+            }
+        ]
+    },
+    {
+        "title": "Autour de Nouméa",
+        "route": "/noumea",
+        "region": "Noumea",
+        "children": [
+            {
+                "title": "Îlot Amédée",
+                "route": "/ilot-amedee",
+                "ilot": "IlotAmedee"
+            },
+            {
+                "title": "Île Larégnère",
+                "route": "/ile-laregnere",
+                "ilot": "IleLaregnere"
+            },
+            {
+                "title": "Îlot Signal",
+                "route": "/ilot-signal",
+                "ilot": "IlotSignal"
+            }
+        ]
+    },
+    {
+        "title": "A l'ouest de Nouméa",
+        "route": "/noumea-ouest",
+        "region": "OuestNoumea",
+        "children": [
+            {
+                "title": "Île Ronde",
+                "route": "/ile-ronde",
+                "ilot": "IleRonde"
+            },
+            {
+                "title": "Îlot Goldfield",
+                "route": "/ilot-goldfield",
+                "ilot": "IlotGoldfield"
+            },
+            {
+                "title": "Îlot Lange",
+                "route": "/ilot-lange",
+                "ilot": "IlotLange"
+            },
+            {
+                "title": "Îlot M'Ba",
+                "route": "/ilot-mba",
+                "ilot": "IlotMba"
+            },
+            {
+                "title": "Îlot M'Bo",
+                "route": "/ilot-mbo",
+                "ilot": "IlotMbo"
+            },
+            {
+                "title": "Îlot Mbé Kouen",
+                "route": "/ilot-mbe-kouen",
+                "ilot": "IlotMbeKouen"
+            },
+            {
+                "title": "Îlot Pandanus",
+                "route": "/ilot-pandanus",
+                "ilot": "IlotPandanus"
+            },
+            {
+                "title": "Îlots Mbe, Abu et Moro",
+                "route": "/ilots-mbe-abu-moro",
+                "ilot": "IlotsMbeAbuMoro"
+            }
+        ]
+    },
+    {
+        "title": "Poindimié",
+        "route": "/poindimie",
+        "region": "Poindimie",
+        "children": [
+            {
+                "title": "Îlot Bayes",
+                "route": "/ilot-bayes",
+                "ilot": "IlotBayes"
+            },
+            {
+                "title": "Îlot Bois de Fer",
+                "route": "/ilot-bois-fer",
+                "ilot": "IlotBoisDeFer"
+            },
+            {
+                "title": "Îlot Faux Tabac",
+                "route": "/ilot-faux-tabac",
+                "ilot": "IlotFauxTabac"
+            },
+            {
+                "title": "Îlot Tibarama",
+                "route": "/ilot-tibarama",
+                "ilot": "IlotTibarama"
+            }
+        ]
+    },
+    {
+        "title": "Presqu'île de Poum",
+        "route": "/poum",
+        "region": "Poum",
+        "children": [
+            {
+                "title": "Récif Bammahane",
+                "route": "/recif-bammahane",
+                "ilot": "RecifBammahane"
+            },
+            {
+                "title": "Îlots Néangambo et Ti",
+                "route": "/ilots-neangambo-ti",
+                "ilot": "IlotsNeangamboTi"
+            },
+            {
+                "title": "Îlot Ouanne",
+                "route": "/ilot-ouanne",
+                "ilot": "IlotOuanne"
+            },
+            {
+                "title": "Îlot Ti-Ac",
+                "route": "/ilot-ti-ac",
+                "ilot": "IlotTiAc"
+            },
+            {
+                "title": "Îlot Tiam'Bouene",
+                "route": "/ilot-tiambouene",
+                "ilot": "IlotTiamBouene"
+            }
+        ]
+    },
+    {
+        "title": "Thio",
+        "route": "/thio",
+        "region": "Thio",
+        "children": [
+            {
+                "title": "Îlot Kindé",
+                "route": "/ilot-kinde",
+                "ilot": "IlotKinde"
+            },
+            {
+                "title": "Îlot Niléouti",
+                "route": "/ilot-nileouti",
+                "ilot": "IlotNileouti"
+            }
+        ]
+    },
+    {
+        "title": "Tiakan",
+        "route": "/tiakan",
+        "region": "Tiakan",
+        "children": [
+            {
+                "title": "Îlot St Ignace",
+                "route": "/ilot-st-ignace",
+                "ilot": "IlotStIgnace"
+            }
+        ]
+    }
+]

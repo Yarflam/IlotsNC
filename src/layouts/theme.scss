@@ -1,0 +1,186 @@
+@import 'root/assets/mixins.scss';
+@import 'root/assets/responsive.scss';
+
+$first-color: #00695C;
+$second-color: #1E88E5;
+$third-color: #1565C0;
+
+$drawer_width: 250px;
+
+$view_margin: 20px;
+
+.Theme {
+    .Drawer {
+        @include transition-mixin(left .5s ease);
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: $drawer_width;
+        background-color: $third-color;
+        border-right: 2px solid rgba(0,0,0,.3);
+        z-index: 2;
+
+        @include responsive(sm) {
+            left: -$drawer_width;
+            &.active {
+                left: 0;
+            }
+        };
+
+        .MenuResponsive {
+            display: none;
+            position: absolute;
+            top: 5px; left: $drawer_width + 5px;
+
+            @include responsive(sm) {
+                display: block;
+            }
+        }
+
+        nav {
+            & > ul {
+                list-style-type: none;
+
+                & > li {
+                    a {
+                        @include transition-mixin(all .5s ease);
+                        display: block;
+                        text-decoration: none;
+                        font-family: 'Ubuntu';
+                        font-size: 16px;
+                        color: #FFF;
+                        padding: 20px;
+
+                        @include responsive(sm) {
+                            padding: 10px;
+                        };
+
+                        &.active,
+                        &:hover {
+                            background-color: $second-color;
+                            cursor: pointer;
+                        }
+                    }
+
+                    & > ul {
+                        display: none;
+                        list-style-type: none;
+                        border-left: 15px solid $second-color;
+                    }
+
+                    a.active + ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .MainView {
+        @include transition-mixin(left .5s ease);
+        position: absolute;
+        top: 0; left: $drawer_width; right: 0;
+        bottom: 0;
+        overflow: hidden;
+
+        @include responsive(sm) {
+            left: 0;
+        };
+
+        header {
+            h1 {
+                display: none;
+            }
+        }
+
+        article {
+            font-family: 'Roboto';
+            font-size: 16px;
+            color: #000;
+
+            h1 {
+                display: block;
+                background: $first-color;
+                font-weight: normal;
+                color: #FFF;
+                padding: 80px 25px 20px 25px;
+            }
+
+            h2, h3, h4, h5, h6, p, ul, ol, .quote, .alert {
+                margin: $view_margin;
+            }
+
+            @for $i from 1 through 6 {
+                h#{$i} {
+                    font-size: ((22 / 6) * (6 - $i + 1) + 10) + px;
+                    // margin-left: $view_margin * ($i - 1);
+                    @if ( $i > 1 ) {
+                        $p: round((70 / 6) * $i);
+                        color: lighten( black, $p );
+                        &::after {
+                            content: $p;
+                        }
+                    }
+                }
+            }
+
+            img {
+                display: block;
+                max-height: 200px;
+                margin: 5px auto;
+            }
+
+            ul, ol {
+                padding-left: 40px;
+                li {
+                    margin: 10px 0;
+                }
+            }
+
+            .alert, .quote {
+                @include border-radius-mixin(3px);
+                border: 1px solid rgba(0,0,0,.1);
+                background-color: #F0F0F0;
+                padding: 20px;
+
+                &.alert {
+                    border: 3px solid rgba(255,0,0,.3);
+                    font-weight: bold;
+                    color: red;
+                }
+            }
+
+            .ui-metro {
+                width: 100%;
+                text-align: center;
+                padding: 0 20px;
+
+                & > div {
+                    @include border-radius-mixin(3px);
+                    @include transition-mixin(opacity .5s ease);
+                    position: relative;
+                    display: inline-block;
+                    width: 200px;
+                    height: 200px;
+                    background-color: #444;
+                    background-size: cover;
+                    margin: 0 10px;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    & > span {
+                        display: block;
+                        position: absolute;
+                        left: 0; bottom: 0; right: 0;
+                        background-color: rgba(0,0,0,.5);
+                        color: #FFF;
+                        padding: 10px 5px;
+                    }
+
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}

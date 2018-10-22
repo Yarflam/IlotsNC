@@ -1,0 +1,19 @@
+/* Responsive Design */
+$break-xs: 769px;
+$break-sm: 992px;
+$break-md: 1200px;
+
+@mixin responsive ($media) {
+    @if $media == xs {
+        @media only screen and (max-width: $break-xs) { @content; }
+    }
+    @else if $media == sm {
+        @media only screen and (max-width: $break-sm) { @content; }
+    }
+    @else if $media == md {
+        @media only screen and (max-width: $break-md) { @content; }
+    }
+    @else {
+        @media only screen and (max-width: $media) { @content; }
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/favicons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="Ilots de NC">
+        <meta name="application-name" content="Ilots de NC">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Title -->
+        <title>Îlots de Nouvelle Calédonie</title>
+        <link rel="stylesheet" href="ubuntu.min.css" />
+        <script>
+        let publicPath = '/';
+        if (process.env.NODE_ENV === 'development') {
+            const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
+            const host = process.env.HOST || '0.0.0.0';
+            const port = parseInt(process.env.PORT, 10) || 3000;
+            publicPath = protocol + '://' + host + ':' + port + '/';
+        }
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            let link = document.createElement('link');
+            link.rel = 'manifest';
+            link.href = publicPath + 'manifest.json';
+            document.getElementsByTagName('head')[0].appendChild(link);
+
+            if (process.env.NODE_ENV === 'development') {
+                document.write('<script src="' + publicPath + 'static/js/bundle.js"><\/script>');
+            }
+        </script>
+    </body>
+</html>

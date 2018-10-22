@@ -1,0 +1,34 @@
+@mixin border-radius-mixin ($props) {
+    -webkit-border-radius: $props;
+    -moz-border-radius: $props;
+    -o-border-radius: $props;
+    border-radius: $props;
+}
+
+@mixin box-shadow-mixin ($props) {
+    -webkit-box-shadow: $props;
+    -moz-box-shadow: $props;
+    -o-box-shadow: $props;
+    box-shadow: $props;
+}
+
+@mixin transition-mixin ($props...) {
+    -webkit-transition: $props;
+    transition: $props;
+}
+
+@mixin transform-mixin ($props...) {
+    -webkit-transform: $props;
+    -moz-transform: $props;
+    -ms-transform: $props;
+    -o-transform: $props;
+    transform: $props;
+}
+
+@mixin transform-origin-mixin ($props...) {
+    -webkit-transform-origin: $props;
+    -moz-transform-origin: $props;
+    -ms-transform-origin: $props;
+    -o-transform-origin: $props;
+    transform-origin: $props;
+}
