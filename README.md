@@ -6,6 +6,8 @@
 
 **ATTENTION : Le contenu de ce site n'est pas mise à jour depuis 2012. Nous ne sommes pas responsable de l'utilisation que vous en faites, les risques que vous prenez et les informations que vous partagez. Par ailleurs, le contenu proposé contient des informations obsolètes par rapport à la législation maritime & terrestre en vigueur. Nous vous invitons à vérifier ces informations auprès des autorités compétentes de Nouvelle Calédonie.**
 
+Partager ce dépôt sur [Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A//github.com/Yarflam/IlotsNC), [Twitter](https://twitter.com/home?status=https%3A//github.com/Yarflam/IlotsNC), [Google+](https://plus.google.com/share?url=https%3A//github.com/Yarflam/IlotsNC), [Linkedin](https://www.linkedin.com/shareArticle?mini=true&url=https%3A//github.com/Yarflam/IlotsNC&title=%C3%8Elots%20de%20Nouvelle%20Cal%C3%A9donie) ou par [ email](mailto:https://github.com/Yarflam/IlotsNC).
+
 ## 1. Présentation
 
 Créé en 2010, le site des îlots de Nouvelle Calédonie était un projet familial. Mon père rédigeait les textes, ma mère retravaillait les photos et dessinait les cartes ; je m'occupais de l'entretien général de la plateforme : mise en page (HTML), programmation d'un compteur de visite et d'un système statistiques (PHP/SQL), mise en ligne des images / photos et PDF.
