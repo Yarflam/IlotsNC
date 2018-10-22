@@ -227,9 +227,41 @@ $ npm run build
 
 En conservant la configuration actuelle, vous obtiendrez une version standalone (sans serveur).
 
+#### Solution Serveur
+
+Il suffit de changer d'EntryPoint dans la configuration de **Webpack** (/config/paths.js) :
+
+```
+- appIndexJs: resolveApp('src/index.local.jsx')
++ appIndexJs: resolveApp('src/index.jsx')
+```
+
+Pour que ce soit pleinement utilisable, il faut penser à remplacer l'URL des images commençant par "./" (lien relatif) par "/" (racine du site). Pour tester rapidement, vous pouvez installer webpack-dev-server :
+
+```
+$ npm i -g webpack-dev-server
+```
+
+Puis lancer la commande suivante dans le répertoire /build (une erreur s'affichera, n'en tenez pas compte) :
+
+```
+$ webpack-dev-server .
+Project is running at http://localhost:8080/
+webpack output is served from /
+```
+
+Le répertoire /build peut ensuite être hébergé gratuitement sur [Netlify](https://www.netlify.com).
+
+Si vous souhaitez l'héberger chez vous / sur votre serveur dédié, un serveur Node.js avec Express pointant vers le répertoire build suffira. Niveau sécurité & résilience (si le serveur se prend un DDoS ou une panne), il vaut mieux lancer le serveur à travers pm2 et derrière un web proxy configuré sur Apache ou Nginx. Pour le certificat SSL, vous pouvez utiliser Let's Encrypt (gratuit). Bien sûr, une distribution Linux est recommandée (une Debian par exemple).
+
+#### Solution Applicative NW.js
+
+... il me faut tester plusieurs configurations avant de conclure sur une procédure, les packages y sont en tout cas ...
 
 ## 6. Aides et documentations
 
 - [Documentation npm](https://docs.npmjs.com)
 - [Site officiel de React](https://reactjs.org)
 - [Tutoriel OpenClassRooms](https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js)
+- [Let's Encrypt](https://letsencrypt.org)
+- [PM2](http://pm2.keymetrics.io)
